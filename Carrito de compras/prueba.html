@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JS</title>
+  </head>
+  <body>
+    <!-- Carrito de compras -->
+    <section class="wrapper">
+      <article class="productos">
+        <!-- 1 -->
+        <div class="frutas">
+          <p class="frutilla">Fresa🍓</p>
+          <p class="precio">$300</p>
+          <button id="btn-frutas" data-fruta="Fresa" data-precio="300">
+            Agregar
+          </button>
+        </div>
+        <!-- 2 -->
+        <div class="frutas">
+          <p class="frutilla">Platano🍌</p>
+          <p class="precio">$200</p>
+          <button id="btn-frutas" data-fruta="Platano" data-precio="200">
+            Agregar
+          </button>
+        </div>
+        <!-- 3 -->
+        <div class="frutas">
+          <p class="frutilla">Manzana🍎</p>
+          <p class="precio">$100</p>
+          <button id="btn-frutas" data-fruta="Manzana" data-precio="100">
+            Agregar
+          </button>
+        </div>
+      </article>
+      <article class="carrito"></article>
+    </section>
+    <footer id="footer" class="footer-container"></footer>
+
+    <!-- Templates -->
+    <template id="templateFooter">
+      <div class="footer-body">
+        <p class="footer-total">Total: $<span class="span-total">1500</span></p>
+        <button class="footer-btn">Finalizar compra</button>
+      </div>
+    </template>
+    <!--  -->
+    <template class="template-carrito">
+      <div class="container">
+        <span class="carrito-numero">12</span>
+        <span class="carrito-producto">Producto</span>
+      </div>
+      <div class="total-carrito">
+        <p class="total-fruta-carrito">Total: $<span>300</span></p>
+        <p class="btns-quitar-agregar">
+          <button class="quitar-carrito">Quitar</button>
+          <button class="agregar-carrito">Agregar</button>
+        </p>
+      </div>
+    </template>
+    <!-- JS -->
+    <script src="./delegacion2.js"></script>
+  </body>
+</html>
