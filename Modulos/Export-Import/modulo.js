@@ -17,4 +17,8 @@ class Fruta {
   }
 }
 
+// Export default
+const cereza = "🍒";
+
+export default cereza;
 export {fresa, pintarPlatano, manzana, Fruta};
